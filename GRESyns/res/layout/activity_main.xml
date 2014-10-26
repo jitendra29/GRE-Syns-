@@ -1,0 +1,221 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".MainActivity" >
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <LinearLayout
+	        android:id="@+id/row1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+	        android:padding="10dp" >
+	      
+	        <LinearLayout
+	            android:id="@+id/word11"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical"
+	            android:paddingBottom="10dp"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"
+	            android:paddingTop="10dp" >
+
+	            <ImageButton
+	                android:id="@+id/boxList"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@android:color/white"
+	                android:contentDescription="@string/boxlist"
+	                android:src="@drawable/box_list" />
+		
+		        <TextView
+	                android:id="@+id/Box"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+	                android:text="@string/boxlist" />
+		     
+	        </LinearLayout>
+	        
+	        <LinearLayout
+		        android:id="@+id/word12"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+	            android:gravity="center"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:paddingLeft="20dp"
+		        android:paddingRight="20dp"		        
+		        android:orientation="vertical" >
+			        
+		        <ImageButton
+		            android:id="@+id/groupList"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@android:color/white"
+		            android:src="@drawable/group_list"
+		            android:contentDescription="@string/grouplist"  />
+		        
+				<TextView
+				    android:id="@+id/Group"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+				    android:text="@string/grouplist" />
+				
+		    </LinearLayout>
+	    
+	    </LinearLayout>
+	
+	    
+	    <LinearLayout
+	        android:id="@+id/row2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/row1"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+	        android:padding="10dp" >
+	
+	        <LinearLayout
+	            android:id="@+id/word21"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical"
+	            android:paddingBottom="10dp"
+	            android:paddingLeft="20dp"
+	            android:paddingTop="10dp"
+	            android:paddingRight="20dp" >
+
+		        <ImageButton
+			        android:id="@+id/favourite"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:background="@android:color/white"		            
+			        android:src="@drawable/favourite"
+		            android:contentDescription="@string/favourites" />
+				
+		        <TextView
+	            	android:id="@+id/fav"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+	                android:text="@string/fav" />
+		        
+	        </LinearLayout>
+	        
+			<LinearLayout
+		        android:id="@+id/word22"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+	            android:gravity="center"
+		        android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"			        
+		        android:orientation="vertical" >
+		        
+		        <ImageButton
+		            android:id="@+id/test"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@android:color/white"
+		            android:contentDescription="@string/test"
+		            android:src="@drawable/test" />
+		        
+		        <TextView
+	                android:id="@+id/testTV"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+	                android:text="@string/test" />
+		          
+		    </LinearLayout>	        
+	        	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/row3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/row2"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+	        android:padding="10dp" >
+
+	        <LinearLayout
+	            android:id="@+id/word31"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical"
+	            android:paddingBottom="10dp"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"
+	            android:paddingTop="10dp" >
+
+	            <ImageButton
+	                android:id="@+id/about"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@android:color/white"
+	                android:contentDescription="@string/about"
+	                android:src="@drawable/about" />
+
+	            <TextView
+	                android:id="@+id/abt"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+	                android:text="@string/about" />
+	            
+	        </LinearLayout>
+
+	        <LinearLayout
+		        android:id="@+id/word32"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+	            android:gravity="center"
+		        android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"		        
+		        android:orientation="vertical" >
+		            
+				<ImageButton
+		            android:id="@+id/share"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@android:color/white"
+		            android:contentDescription="@string/share"
+		            android:src="@drawable/share" />
+	          	<TextView
+	                android:id="@+id/shareTV"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+	                android:text="@string/share" />
+	        </LinearLayout>
+	        
+		</LinearLayout>
+
+	</RelativeLayout>
+	
+</ScrollView>

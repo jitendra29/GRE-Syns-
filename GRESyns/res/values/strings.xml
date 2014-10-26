@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GRE Syns</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_box">Box</string>
+    <string name="title_activity_main">@string/app_name</string>
+    <string name="title_activity_display">DisplayActivity</string>
+    <string name="viewbutton">View Groups</string>
+    <string name="title_activity_view_word_list">ViewWordList</string>
+    <string name="addbutton">Add to another group</string>
+    <string name="title_activity_group_display">GroupDisplay</string>
+    <string name="title_activity_group_display_confirm">GroupDisplay</string>
+    <string name="word">Word</string>
+    <string name="title_activity_group_list">Group List</string>
+    <string name="boxlist">Box List</string>
+    <string name="grouplist">Group List</string>
+    <string name="greheading">From the GRE wordlist :</string>
+    <string name="otherheading">Other meanings :</string>
+    <string name="newlist">Create new group</string>
+    <string name="add_confirm">Add</string>
+    <string name="search">Search</string>
+    <string name="title_activity_new_group">NewGroup</string>
+    <string name="meaningLabel">Enter meaning of the group:</string>
+    <string name="pos">Choose a POS:</string>
+    <string name="meaning_hint">Meaning</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_about">About</string>
+    <string name="jitendra">jitendra.jain@live.com</string>
+    <string name="deep">deepshah@live.com</string>
+    <string name="about">About</string>
+    <string name="next">Next</string>
+    <string name="prev">Prev</string>
+    <string name="fav">Favourites</string>
+    <string name="searchwords">Search similar words</string>
+    <string name="share_title">Share GRE Syns</string>
+    <string name="share_content">Try GRE Syns to quickly memorize the GRE wordlist! Download it from Play Store: bit.ly/gresyns</string>
+    <string name="share">Tell a friend</string>
+    <string name="title_activity_test">Test</string>
+    <string name="words">Words</string>
+    <string name="meanings">Meanings</string>
+    <string name="random">Random</string>
+    <string name="user_words">Words added by you:</string>
+    <string name="default_words">Words from the dictionary:</string>
+    <string name="questionNo">Question:</string>
+    <string name="title_activity_test_score">Test Score</string>
+    <string name="your_score">Your Score</string>
+    <string name="test_again">Test Again</string>
+    <string name="answer">Answer</string>
+    <string name="title_activity_box_list">Box List</string>
+    <string name="title_activity_favourites">Favourites</string>
+    <string name="test">Test</string>
+    <string name="favourites">Favourites</string>
+
+    
+    <string-array name="poslist">
+        <item>Noun</item>
+        <item>Verb</item>
+        <item>Adjective</item>
+    </string-array>
+    
+</resources>

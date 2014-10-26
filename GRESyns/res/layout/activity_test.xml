@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".Test" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <RadioGroup
+	        android:id="@+id/testType"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:checkedButton="@+id/random"
+	        android:orientation="horizontal" >
+	
+	        <RadioButton
+		        android:id="@+id/random"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/random"
+	            android:onClick="onTypeRadioButtonClicked" />
+	        		
+	    	<RadioButton
+		        android:id="@+id/words"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/words"
+	            android:onClick="onTypeRadioButtonClicked" />
+	    	
+	    	<RadioButton
+		        android:id="@+id/meanings"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/meanings"
+	            android:onClick="onTypeRadioButtonClicked" />
+	    	  	
+	    </RadioGroup>
+	     
+		<View
+		    android:id="@+id/div"
+		    android:layout_width="fill_parent"
+		    android:layout_height="2dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/testType"
+		    android:background="@color/divider" />
+		   	
+	    <TextView
+	        android:id="@+id/questionNo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/div"
+	        android:padding="5sp"
+	        android:text="@string/questionNo"
+	        android:textColor="@color/textBlue"
+	        android:textSize="30sp" />
+		        
+	    <TextView
+	        android:id="@+id/question"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/questionNo"
+	        android:layout_alignParentLeft="true"
+	        android:paddingTop="5sp"
+	        android:paddingBottom="5sp"
+	        android:textSize="20sp" />
+	
+	    <Button
+	        android:id="@+id/test_next"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/testOptions"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="10sp"
+	        android:layout_marginTop="10sp"
+	        android:text="@string/answer"
+	        android:visibility="gone" />
+
+	    <RadioGroup
+	        android:id="@+id/testOptions"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/question"
+	        android:layout_marginLeft="-5dp" >
+
+	        <RadioButton
+	            android:id="@+id/option1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="onOptionRadioButtonClicked" />
+
+	        <RadioButton
+	            android:id="@+id/option2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="onOptionRadioButtonClicked" />
+
+	        <RadioButton
+	            android:id="@+id/option3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="onOptionRadioButtonClicked" />
+
+	        <RadioButton
+	            android:id="@+id/option4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="onOptionRadioButtonClicked" />
+	    </RadioGroup>
+	
+	</RelativeLayout>
+</ScrollView>

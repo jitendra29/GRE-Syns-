@@ -1,0 +1,51 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".TestScore" >
+    
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView
+	        android:id="@+id/score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/your_score"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@color/textBlue"
+	        android:textSize="120sp" />
+	
+	    <Button
+	        android:id="@+id/test_again"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/score"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/test_again" />
+
+	    <TextView
+	        android:id="@+id/your_score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="10sp"
+	        android:layout_marginBottom="20sp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/your_score"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/textBlue" />
+	
+	</RelativeLayout>
+	
+</ScrollView>

@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupDisplay"  >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/Meaning"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    	<View
+	    android:id="@+id/div2"		    
+	    android:layout_width="fill_parent"
+	    android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Meaning"		    
+	    android:background="@color/divider"/>
+    	<TextView
+	    android:id="@+id/default_words"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/div2"
+	    android:padding="5sp"
+	    android:text="@string/default_words"
+	    android:textColor="@color/textBlue"
+	    android:textSize="14sp"
+	    android:textStyle="italic" />
+    	
+ <ListView
+     android:id="@+id/group_word_list"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/default_words"
+     android:fastScrollEnabled="true" >
+	
+    </ListView>
+    <View
+	    android:id="@+id/div3"		    
+	    android:layout_width="fill_parent"
+	    android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/group_word_list"		    
+	    android:background="@color/divider"/>
+<TextView
+	    android:id="@+id/user_words"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/div3"
+	    android:padding="5sp"
+	    android:text="@string/user_words"
+	    android:textColor="@color/textBlue"
+	    android:textSize="14sp"
+	    android:textStyle="italic" />
+ <ListView
+     android:id="@+id/ugroup_word_list"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/user_words"		    
+     android:fastScrollEnabled="true" >
+ </ListView>
+ 
+</RelativeLayout>
+</ScrollView>
